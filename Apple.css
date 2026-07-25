@@ -543,16 +543,10 @@ ul{
         display: flex;
         justify-content: space-between;
         width: inherit;
+
         }
 
-        button i {
-            transition: transform 0.4s ease-in-out;
-            
-            i.rotate {
-            transform: rotateX(180deg);
-            }
-        }
-
+        
         a{
             padding: .5rem .5rem .5rem .3rem ;
             text-decoration: none;
@@ -563,6 +557,7 @@ ul{
         }
 
 }
+
 
 @media (max-width : 1200px){
 
@@ -602,7 +597,6 @@ ul{
         }
 
 }
-
 
 @media (max-width:1000px){    
  
@@ -675,9 +669,17 @@ ul{
             display: block;
             width: 100%;
             border-bottom: solid #757575 .05rem;
-
+            i {
+            transition: transform 0.3s ease; 
+            }
+            
+            i.rotate {
+            transform: rotateX(180deg);
+            }
         }
 
+        
+        
 
 
 }
