@@ -3,7 +3,7 @@
     margin:0px;
     border: border-box;
     padding: 0px;
-    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
      background: transparent;
@@ -15,13 +15,16 @@
     display: flex;
     align-items: center;
     width: 100%;
-    height: 3rem;
+    height: 2.5rem;
     color: black;
     background-color: rgba(255, 255, 255, 0.695);
-    font-size: 0.5rem;
     justify-content: center;
-    gap: 2rem;
+    gap: 1.5rem;
     z-index: 15;
+
+    button{
+        font-size: .8rem;
+    }
 }
 
 #menu{
@@ -63,18 +66,18 @@
 
 .menu-backdrop {
     position: fixed;
-    top: 3rem; /* Starts exactly where the navbar ends */
+    top: 3rem; 
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.15); /* Soft dimming effect */
-    backdrop-filter: blur(10px);            /* The blur effect */
-    -webkit-backdrop-filter: blur(8px);    /* Safari support */
+    background-color: rgba(0, 0, 0, 0.15); 
+    backdrop-filter: blur(10px);           
+    -webkit-backdrop-filter: blur(8px);  
     opacity: 0;
     visibility: hidden;
-    pointer-events: none;                  /* Prevents it from blocking clicks normally */
+    pointer-events: none;                
     transition: opacity 0.3s ease, visibility 0.3s ease;
-    z-index: 0;                            /* Sits safely behind your dropdowns (z-index: 999) */
+    z-index: 0;                           
 }
 
 .inner_div{
@@ -84,11 +87,11 @@
     visibility: hidden;
     height: 3.3rem;
     align-items: left;     
+    padding-left: 22%;
     overflow: hidden;
     background-color: white;
     color: transparent;
     width: inherit;
-    padding-left: 20rem;
     padding-bottom: 6rem;
     transition: all .3s ;
     transition-delay: .1s;
@@ -97,7 +100,7 @@
 }
 .main_logo{
      display: inline-block;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 .main_logo a {
     text-decoration: none;
@@ -106,7 +109,7 @@
 
 .logo{
     display: inline-block;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 header button{  
@@ -225,128 +228,18 @@ font-size: .8rem;
 }
 
 
-
-/* .navbar:has( #st:hover) + .jj #s , .jj #s:hover  {
-    height: 40vh;
-    padding-top: 5rem; 
-    visibility: visible;
-    color: black;
-   
-}
-
-.navbar:has( #Mac:hover) + .jj #m, .jj #m:hover   {
-    height: 37vh;
-    padding-top: 5rem; 
-    visibility: visible;
-    color: black;
-   
-}
-
-
-.navbar:has( #iPad:hover) + .jj #ip ,  .jj #ip:hover   {
-
-    height: 32vh;
-    padding-top: 5rem; 
-    visibility: visible;
-    color: black;
-
-}
-
-.navbar:has( #iPhone:hover) + .jj #i,  .jj #i:hover   {
-    height: 23vh;
-    padding-top: 5rem; 
-    visibility: visible;
-    color: black;
-}
-
-
-.navbar:has( #Watch:hover) + .jj #w ,  .jj #w:hover   {
-
-    height: 23vh;
-    padding-top: 5rem; 
-    visibility: visible;
-    color: black;
-
-}
-
-.navbar:has( #Vision:hover) + .jj #v,  .jj #v:hover   {
-    height: 13vh;
-    padding-top: 5rem; 
-    visibility: visible;
-    color: black;
-}
-
-
-.navbar:has( #TV:hover) + .jj #t ,  .jj #t:hover   {
-
-    height: 17vh;
-    padding-top: 5rem; 
-    visibility: visible;
-    color: black;
-
-}
-
-.navbar:has( #enter:hover) + .jj #e,  .jj #e:hover   {
-    height: 43vh;
-    padding-top: 5rem; 
-    visibility: visible;
-    color: black;
-}
-
-.navbar:has( #acces:hover) + .jj #a ,  .jj #a:hover   {
-
-    height: 33vh;
-    padding-top: 5rem; 
-    visibility: visible;
-    color: black;
-
-}
-
-.navbar:has( #Support:hover) + .jj #ss,  .jj #ss:hover   {
-    height: 27vh;
-    padding-top: 5rem; 
-    visibility: visible;
-    color: black;
-}
-
-
-.navbar:has(  #search:hover ) + .jj #sear , .jj #sear:hover   {
-
-    height: 33vh;
-    padding-top: 5rem; 
-    visibility: visible;
-    color: black;
-
-}
-
-.navbar:has( #cart:hover) + .jj #crt,  .jj #crt:hover   {
-    height: 37vh;
-    padding-top: 5rem; 
-    visibility: visible;
-    color: black;
-}
-
-.navbar:has( #menu:hover) + .jj #menu_item , .jj #menu_item:hover  {
-    height: 100vh;
-    padding-top: 5rem; 
-    visibility: visible;
-    color: black;
-} */
-
-
-/* Reveal backdrop via JS active class instead of hover */
 .menu-backdrop.active {
     opacity: 2;
     visibility: visible;
 }
 
-/* Reveal individual menus via JS active class */
 #s.active { height: 40vh; padding-top: 5rem; visibility: visible; color: black; }
 #m.active { height: 37vh; padding-top: 5rem; visibility: visible; color: black; }
 #ip.active { height: 32vh; padding-top: 5rem; visibility: visible; color: black; }
 #i.active { height: 23vh; padding-top: 5rem; visibility: visible; color: black; }
 #w.active { height: 23vh; padding-top: 5rem; visibility: visible; color: black; }
 #v.active { height: 13vh; padding-top: 5rem; visibility: visible; color: black; }
+#air.active { height: 23vh; padding-top: 5rem; visibility: visible; color: black; }
 #t.active { height: 17vh; padding-top: 5rem; visibility: visible; color: black; }
 #e.active { height: 43vh; padding-top: 5rem; visibility: visible; color: black; }
 #a.active { height: 33vh; padding-top: 5rem; visibility: visible; color: black; }
@@ -574,23 +467,56 @@ main a{
 }
 
 
+
 footer{  
     display: flex;
     flex-direction: column;
-    justify-items: start;
-    padding-left: 20%;
-    padding-right: 20%;
+    align-items: center; /* Keeps the main container centered */
+    font-size: .75rem;
+    color: #757575;
+    margin-bottom: 1rem;
+    text-align: left; /* Keeps text left-aligned inside the centered container */
+}
+
+.term{
+    width: 58.4rem;
+    border-bottom: solid #757575 .05rem;
+    text-align: left;
+}
+
+.lap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Spreads the columns evenly */
+    width: 58.4rem; /* Matches the exact width of .term so it aligns with its left edge */
+    margin: 0 auto; /* Centers the row block relative to the footer */
+}
+
+/* Ensure copyright and extra text paragraphs match the same width block */
+footer p {
+    width: 58.4rem;
+    text-align: left;
+}
+
+/* 
+footer{  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: .75rem ;
     color: #757575;
     margin-bottom: 1rem;
-}
-
+} */
 
 footer a{
     color: #757575;
 }
 
-
+.lap{
+    display: flexbox;
+    flex-direction: row;
+    justify-content: left;
+}
 .phone{
     display: none;
     width: 100%;
@@ -599,14 +525,19 @@ footer a{
 ul{
     list-style-type: none;
 }
+/* 
+.term {
+ width: 58.4rem;
+    border-bottom: solid #757575 .05rem;
+} */
 
 
 .hehe{
         display: inline-flex ;
         flex-direction: column;
-        width: 19%;
-        align-items: start;
-        gap: .5rem;
+        margin-right: 2.5%;
+        width: 9rem;
+        gap: .4rem;
 }
 
 .hehe button{
@@ -617,19 +548,15 @@ ul{
         font-size: .75rem;
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        width: 100%;
+        width: inherit;
 }
 
 .hehe button i {
     transition: transform 0.4s ease-in-out;
-}
-
-.hehe button i.rotate {
+    
+    i.rotate {
     transform: rotateX(180deg);
-}
-.term{
-   width: 58.4rem;
+     }
 }
 
 .hehe a{
@@ -661,14 +588,6 @@ ul{
         }
     }
 
-
-footer{
-         padding-left: 10%;
-        padding-right: 10%;
-        }
-    .term{
-        width:100%
-    }
         .small_1{
             height: 30rem;
         }
@@ -693,6 +612,45 @@ footer{
 
 }
 
+
+@media (max-width:1000px){    
+ .term{
+        width: 100%;
+    }
+    
+    footer{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+}
+
+@media (max-width:870px){
+     #crt,#sear{
+        padding-left: 3%;
+    }
+
+
+    .navbar button{
+        display: none;
+    }
+
+    .navbar #menu{
+        display: block;
+    }
+
+    .navbar{
+    justify-content: end;
+}
+
+.main_logo{
+    font-size: 1rem;
+   margin-right:94%;
+   position: fixed;
+ 
+}
+
+}
 
 @media (max-width:745px) {
 
@@ -722,37 +680,8 @@ footer{
 }
 
 
-@media (max-width:900px){
-
-     #crt,#sear{
-        padding-left: 3%;
-    }
-
-    .navbar button{
-        display: none;
-    }
-
-    .navbar #menu{
-        display: block;
-    }
-
-    .navbar{
-    justify-content: end;
-}
-
-.main_logo{
-    font-size: 1.2rem;
-   margin-right:95%;
-   position: fixed;
- 
-}
-
-}
-
-@media (max-width:850px){    
-
-
-     .phone{
+@media (max-width:850px){
+ .phone{
         display:block;
        
     }
@@ -770,23 +699,10 @@ footer{
        .di.active {
         display: flex;
     }
-    
-
-        .term{
-            width: 100%;
-        }
-
-      footer{
-         padding-left: 2%;
-        padding-right: 2%;
-        }
-    
 
         footer ol{  
         display: inline;
         }
-
-    
 
         .hehe{
             width: inherit;
