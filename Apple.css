@@ -194,11 +194,6 @@ header button{
     font-weight: 545;
   
 }
-#si{
-    font-size: .8rem;
-    text-decoration:  underline;
-    color: blue;
-}
 
 #search i{
     transform: rotate(270deg);
@@ -620,25 +615,22 @@ ul{
         padding-left: 3%;
     }
 
-
     .navbar{
 
-   
-     justify-content: end;
+        justify-content: end;
 
-     button{
-        display: none;
-    }
-    #menu{
-        display: block;
-    }
+        button{
+            display: none;
+        }
+        #menu{
+            display: block;
+        }
     }
 
     .main_logo{
         font-size: 1rem;
-    margin-right:94%;
-    position: fixed;
-    
+        margin-right:94%;
+        position: fixed;
     }
 
 
@@ -658,7 +650,7 @@ ul{
         
        .di.active {
         display: flex;
-    }
+     }
 
         footer ol{  
         display: inline;
@@ -670,7 +662,7 @@ ul{
             width: 100%;
             border-bottom: solid #757575 .05rem;
             i {
-            transition: transform 0.3s ease; 
+            transition: transform 0.5s ease; 
             }
             
             i.rotate {
@@ -678,19 +670,19 @@ ul{
             }
         }
 
-        
-        
-
-
 }
 
 @media (max-width:745px) {
+   
+    .top_im {
+            background-image: url(images/macbook_air_m5.jpg);
+        }
 
    .top_im , .im_2 , .im_3 ,.small_1 , .small_2{
 
         width: 100%;
         height: 37rem;
-         margin: 0px;
+        margin: 0px ;
 
        h1{
         font-size: 1.8rem;
@@ -703,11 +695,13 @@ ul{
        }
     }
 
-    .top_im {
-        background-image: url(images/macbook_air_m5.jpg);
-    }
+     .im_2 , .im_3 ,.small_1 , .small_2{
+        margin-top: 8px;
+     }
 
+    
     .test, .test_2 ,.test_3{
+         margin:0px;
         display: block;
     }
 
