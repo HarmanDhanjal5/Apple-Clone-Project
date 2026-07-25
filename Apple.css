@@ -33,12 +33,12 @@
 }
 
 #menu_item li {
-  display: flex;
-  justify-content: space-between; 
-  align-items: center;            
- list-style: none;
-  font-size: 2rem;
- padding-top: .5rem ;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+    list-style: none;
+    font-size: 2rem;
+    padding-top: .5rem ;
 
   i{
     visibility: hidden; 
@@ -49,36 +49,22 @@
 #menu_item li:hover {
     background-color: white;
     i {
-   visibility: visible; 
-}
-
+    visibility: visible; 
   }
+
+}
 
 
 .jj{
      background: transparent;
       position: fixed;
       visibility: hidden;
-     width: 100%;
+        width: 100%;
         z-index: 10;
 }
 
 
-.menu-backdrop {
-    position: fixed;
-    top: 3rem; 
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.15); 
-    backdrop-filter: blur(10px);           
-    -webkit-backdrop-filter: blur(8px);  
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;                
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-    z-index: 0;                           
-}
+
 
 .inner_div{
 
@@ -98,18 +84,15 @@
     z-index: 10;
 
 }
-.main_logo{
+
+.main_logo,.logo{
      display: inline-block;
     font-size: 1.1rem;
-}
-.main_logo a {
-    text-decoration: none;
-    color: #323232;
-}
-
-.logo{
-    display: inline-block;
-    font-size: 1.1rem;
+    cursor: pointer;
+    a {
+        text-decoration: none;
+        color: #323232;
+    }
 }
 
 header button{  
@@ -118,25 +101,25 @@ header button{
     cursor: pointer;
 }
 
-.inner_div  a{
+.inner_div{
+      a{
     text-decoration: none;
     color: black;
-}
-.inner_div li{ 
-    padding-top: .5rem;
+    }
+    li{ 
+        padding-top: .5rem;
+    }
 
 }
+
 .nav_stuff_big li {
     font-size: 1.5rem;
 }
+
 .nav_stuff{
     font-size: .75rem ;
     padding-left: 4rem;
     color: #757575;
-}
-
-.hehe i{
-    align-self:  end;
 }
 
 .fifi_2{
@@ -159,74 +142,93 @@ header button{
 
 }
 
-#search i{
-    transform: rotate(270deg);
+.fifi_2{
+    
+        #llp{
+            font-size: large;
+            align-items: center;
+            padding-right: 1rem;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+        }
+
+        p{
+            padding: .5rem 0rem .5rem 0rem;
+            font-size: medium;
+            color: #757575;
+        }
+
+        i{
+            justify-self: center;
+            display: inline;
+            color: #757575;
+        }  
+
+        li{
+            width: 90%;
+            display: block;
+            font-weight: lighter;
+            font-size: .78rem;
+            padding: .3rem 0rem 0rem .2rem;
+        }
+
+
+        input{
+            outline: none;
+            border : transparent;
+            text-decoration: none;
+            font-size: 1.5rem;
+            width : 90%;
+        }
+
 }
 
-.fifi_2 #llp{
-    font-size: large;
-    align-items: center;
-    padding-right: 1rem;
+.fifi_2 li:hover {
+    background-color: #dbdbdb;
+    color: black;
+    cursor: pointer;
+    font-weight: 545;
+  
 }
-
-
 #si{
     font-size: .8rem;
     text-decoration:  underline;
     color: blue;
 }
 
-#crt p{
-font-size: .8rem;
+#search i{
+    transform: rotate(270deg);
 }
 
-#crt li{
+#crt {
+    p{
     font-size: .8rem;
-     font-weight: 550;  
+    }
+    li{
+        font-size: .8rem;
+        font-weight: 550;  
+    }
+}  
+
+.menu-backdrop {
+    position: fixed;
+    top: 3rem; 
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.15); 
+    backdrop-filter: blur(10px);           
+    -webkit-backdrop-filter: blur(8px);  
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;                
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 0;                           
 }
-
-.fifi_2  a{
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
-}
-
-.fifi_2 li:hover {
-    background-color: #dbdbdb;
-    color: black;
-    font-weight: 545;
-   
-
-}
-.fifi_2 p{
-    padding: .5rem 0rem .5rem 0rem;
-    font-size: medium;
-    color: #757575;
-}
-
-.fifi_2 i{
-    justify-self: center;
-    display: inline;
-    color: #757575;
- }  
-
-.fifi_2 li{
-    width: 90%;
-    display: block;
-    font-weight: lighter;
-    font-size: .78rem;
-    padding: .3rem 0rem 0rem .2rem;
-}
-
-
-.fifi_2 input{
-    outline: none;
-    border : transparent;
-    text-decoration: none;
-    font-size: 1.5rem;
-    width : 90%;
-}
-
 
 .menu-backdrop.active {
     opacity: 2;
@@ -268,22 +270,27 @@ main a{
 .top{
   background: transparent;
    padding-top: 3rem;
-}
-
-.top h1{
-    margin-top: 1rem;
-    justify-self: center;
-    font-size: 3rem;
-    background: transparent;
 
 }
 
-.top p{
-    justify-self: center;
-    padding-top: .1rem;
-    background: transparent;
-    font-size: 1.6rem;
+.top {
+
+        h1{
+            margin-top: 1rem;
+            justify-self: center;
+            font-size: 3rem;
+            background: transparent;
+
+        }
+
+        p{
+            justify-self: center;
+            padding-top: .1rem;
+            background: transparent;
+            font-size: 1.6rem;
+        }
 }
+
 .im {
     padding-top: 1rem;
     background: transparent;
@@ -310,6 +317,7 @@ main a{
       
     
 }
+
 .b2:hover{
     background: #0071E3;
     color:white
@@ -319,6 +327,7 @@ main a{
     background: white ;
     color:#23201D ;
 }
+
 .im_2{
    margin-top: 12px;
    display: flex;
@@ -347,12 +356,13 @@ main a{
     color: white;
 }
 
-.test{
+.test , .test_2 , .test_3{
     width: 100%;
     display: flex;
     margin-top: 12px;
     
 }
+
 .small_1{
     margin: 0px 6px 0px 12px;
     display: flex;
@@ -363,15 +373,23 @@ main a{
     background-size:cover ;
     background-position: center;
     background-image: url(images/ipadair.jpg);
-   
     cursor: pointer;
 }
 
-.small_1 h1{
+.small_1 {
+    h1{
     font-size: 2.1rem;
-}
-.small_1 p{
-    font-size: 1.2rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    button{
+        font-size: .9rem;
+        border-radius: 25px;
+        align-items: center;
+        padding: .5rem 1.2rem .5rem 1.2rem ;
+    }
+
 }
 
 .small_2{
@@ -386,63 +404,59 @@ main a{
     background-image: url(images/macbook.jpg);
     cursor: pointer;
 }
-.small_2 .top{
-    color: white;
-}
-.small_2 h1{
-    justify-self: center;
-    font-size: 2.1rem;
-}
-.small_2 p{
-    font-size: 1.2rem;
-    justify-self: center;
-}
-.small_1  button{
-   font-size: .9rem;
-    border-radius: 25px;
-    align-items: center;
-    padding: .5rem 1.2rem .5rem 1.2rem ;
-}
-.small_2  button{
-    font-size: .9rem;
-    border-radius: 25px;
-    align-items: center;
-    padding: .5rem 1.2rem .5rem 1.2rem ;
-}
 
-
-.test_2{
-    width: 100%;
-    display: flex;
-    margin-top: 12px;
-}
-.test_2 .small_1 {
-    justify-content: end;
-    color: white;
-    background-image: url(images/Airpods.jpg);
-}
-
-.test_2 .small_1 .b1{
-    background-color: white;
-    color: #23201D;
-    margin-bottom: 4rem;
-}
-.test_2 .small_1 .b2{
-    font-size: .9rem;
-    border-radius: 25px;
-    align-items: center;
-     padding: .5rem 1.2rem .5rem 1.2rem ;
+.small_2 {
+    .top{
         color: white;
-        border-color: white;
+    }
+    h1{
+        justify-self: center;
+        font-size: 2.1rem;
+    }
+    p{
+        font-size: 1.2rem;
+        justify-self: center;
+    }
+    button{
+        font-size: .9rem;
+        border-radius: 25px;
+        align-items: center;
+        padding: .5rem 1.2rem .5rem 1.2rem ;
+    }
 }
-.test_2 .small_2{
-    background-image: url(images/watch_series.jpg);
-}
-.test_2 .small_2 .top{
-    color: black;
-}
-.test_2 .small_2 h1{
-     display: inline;
+
+
+.test_2 {
+    
+    .small_1{
+        justify-content: end;
+        color: white;
+        background-image: url(images/Airpods.jpg);
+     }
+
+        .small_1 .b1{
+            background-color: white;
+            color: #23201D;
+            margin-bottom: 4rem;
+        }
+        .small_1 .b2{
+            font-size: .9rem;
+            border-radius: 25px;
+            align-items: center;
+            padding: .5rem 1.2rem .5rem 1.2rem ;
+                color: white;
+                border-color: white;
+        }
+        .small_2{
+            background-image: url(images/watch_series.jpg);
+        }
+        .small_2 .top{
+            color: black;
+        }
+        .small_2 h1{
+            display: inline;
+        }
+
 }
 
 
@@ -450,32 +464,41 @@ main a{
     font-size: 2.5rem;
 }
 
-.test_3{
-     width: 100%;
-    display: inline-flex;
-    margin-top: 12px;
-}
-.test_3 .small_1{
-    color: white;
-    background-image: url(images/tradein.jpg);
-}
-.test_3 .small_2{
-    background-image: url(images/card.jpg);
-}
-.test_3  .top{
-    color: black;
-}
+.test_3 {
 
-
+        .small_1{
+        color: white;
+        background-image: url(images/tradein.jpg);
+        }
+        .small_2{
+            background-image: url(images/card.jpg);
+        }
+        .top{
+            color: black;
+        }
+}
 
 footer{  
     display: flex;
     flex-direction: column;
-    align-items: center; /* Keeps the main container centered */
+    align-items: center; 
     font-size: .75rem;
     color: #757575;
     margin-bottom: 1rem;
-    text-align: left; /* Keeps text left-aligned inside the centered container */
+    text-align: left;
+}
+
+footer{ 
+    p {
+        width: 58.4rem;
+        text-align: left;
+    }
+
+
+    a{
+        color: #757575;
+    }
+
 }
 
 .term{
@@ -487,36 +510,11 @@ footer{
 .lap{
     display: flex;
     flex-direction: row;
-    justify-content: space-between; /* Spreads the columns evenly */
-    width: 58.4rem; /* Matches the exact width of .term so it aligns with its left edge */
-    margin: 0 auto; /* Centers the row block relative to the footer */
+    justify-content: space-between; 
+    width: 58.4rem; 
+    margin: 0 auto; 
 }
 
-/* Ensure copyright and extra text paragraphs match the same width block */
-footer p {
-    width: 58.4rem;
-    text-align: left;
-}
-
-/* 
-footer{  
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: .75rem ;
-    color: #757575;
-    margin-bottom: 1rem;
-} */
-
-footer a{
-    color: #757575;
-}
-
-.lap{
-    display: flexbox;
-    flex-direction: row;
-    justify-content: left;
-}
 .phone{
     display: none;
     width: 100%;
@@ -525,22 +523,18 @@ footer a{
 ul{
     list-style-type: none;
 }
-/* 
-.term {
- width: 58.4rem;
-    border-bottom: solid #757575 .05rem;
-} */
-
 
 .hehe{
         display: inline-flex ;
         flex-direction: column;
-        margin-right: 2.5%;
+        margin-right: 1vw;
         width: 9rem;
         gap: .4rem;
 }
 
-.hehe button{
+.hehe{
+    
+    button{
         padding: .5rem .5rem .5rem .3rem ;
         font-family: sans-serif;
         font-weight: 300px;
@@ -549,23 +543,25 @@ ul{
         display: flex;
         justify-content: space-between;
         width: inherit;
-}
+        }
 
-.hehe button i {
-    transition: transform 0.4s ease-in-out;
-    
-    i.rotate {
-    transform: rotateX(180deg);
-     }
-}
+        button i {
+            transition: transform 0.4s ease-in-out;
+            
+            i.rotate {
+            transform: rotateX(180deg);
+            }
+        }
 
-.hehe a{
-    padding: .5rem .5rem .5rem .3rem ;
-    text-decoration: none;
-}
+        a{
+            padding: .5rem .5rem .5rem .3rem ;
+            text-decoration: none;
+        }
 
-.hehe a:hover{
-    text-decoration-line: underline;
+        a:hover{
+            text-decoration-line: underline;
+        }
+
 }
 
 @media (max-width : 1200px){
@@ -583,17 +579,12 @@ ul{
     }
 
     .small_1 , .small_2{
+       
+        height: 30rem;
         h1 {
          font-size: 1.9rem;      
         }
     }
-
-        .small_1{
-            height: 30rem;
-        }
-        .small_2{
-            height: 30rem;
-        }
 
         .test .small_1{
             background-image: url(images/ipad_air_m4_.jpg);
@@ -614,7 +605,8 @@ ul{
 
 
 @media (max-width:1000px){    
- .term{
+ 
+    .term , .lap{
         width: 100%;
     }
     
@@ -625,23 +617,24 @@ ul{
 
 }
 
-@media (max-width:870px){
+@media (max-width:850px){
      #crt,#sear{
         padding-left: 3%;
     }
 
 
-    .navbar button{
+    .navbar{
+
+   
+     justify-content: end;
+
+     button{
         display: none;
     }
-
-    .navbar #menu{
+    #menu{
         display: block;
     }
-
-    .navbar{
-    justify-content: end;
-}
+    }
 
 .main_logo{
     font-size: 1rem;
@@ -655,9 +648,11 @@ ul{
 @media (max-width:745px) {
 
    .top_im , .im_2 , .im_3 ,.small_1 , .small_2{
+
         width: 100%;
         height: 37rem;
          margin: 0px;
+
        h1{
         font-size: 1.8rem;
        }
@@ -679,11 +674,10 @@ ul{
 
 }
 
-
 @media (max-width:850px){
- .phone{
-        display:block;
-       
+   
+    .phone{
+        display:block;  
     }
 
         .lap{
