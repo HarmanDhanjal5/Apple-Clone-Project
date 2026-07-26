@@ -137,7 +137,7 @@ header button{
     overflow: hidden;
     background-color: white;
     color: transparent;
-   
+
     width: inherit;
     padding-left: 2rem;
     transition: all .3s ;
@@ -147,7 +147,7 @@ header button{
 }
 
 .fifi_2{
-    
+
         #llp{
             font-size: large;
             align-items: center;
@@ -509,6 +509,7 @@ footer{
 .lap{
     display: flex;
     flex-direction: row;
+    border-bottom: solid #757575 1px ;
     justify-content: space-between; 
     width: 58.4rem; 
     margin: 0 auto; 
@@ -527,6 +528,7 @@ ul{
         display: inline-flex ;
         flex-direction: column;
         margin-right: 1vw;
+        margin-bottom: 1rem;
         width: 9rem;
         gap: .4rem;
 }
@@ -619,6 +621,9 @@ ul{
         padding-left: 3%;
     }
 
+    .fifi_2{
+        padding-left: 2rem;
+    }
     .navbar{
 
         justify-content: start;
