@@ -9,6 +9,10 @@
      background: transparent;
 }
 
+header{
+    position: sticky;
+    top:0;
+}
 .navbar{
  
     position: fixed;
@@ -617,7 +621,7 @@ ul{
 
     .navbar{
 
-        justify-content: end;
+        justify-content: start;
 
         button{
             display: none;
@@ -629,8 +633,8 @@ ul{
 
     .main_logo{
         font-size: 1rem;
-        margin-right:94%;
-        position: fixed;
+        width: 80vw;
+        margin-left: .7rem;
     }
 
 
