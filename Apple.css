@@ -7,6 +7,10 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
      background: transparent;
+
+     li:hover{
+        cursor: pointer;
+     }
 }
 
 header{
@@ -106,10 +110,7 @@ header button{
 }
 
 .inner_div{
-      a{
-    text-decoration: none;
-    color: black;
-    }
+     
     li{ 
         padding-top: .5rem;
     }
@@ -244,7 +245,7 @@ header button{
 #t.active { height: 17vh; padding-top: 5rem; visibility: visible; color: black; }
 #e.active { height: 43vh; padding-top: 5rem; visibility: visible; color: black; }
 #a.active { height: 33vh; padding-top: 5rem; visibility: visible; color: black; }
-#ss.active { height: 27vh; padding-top: 5rem; visibility: visible; color: black; }
+#ss.active { height: 35vh; padding-top: 5rem; visibility: visible; color: black; }
 #sear.active { height: 33vh; padding-top: 5rem; visibility: visible; color: black; }
 #crt.active { height: 37vh; padding-top: 5rem; visibility: visible; color: black; }
 #menu_item.active { height: 100vh; padding-top: 5rem; visibility: visible; color: black; }
@@ -548,12 +549,12 @@ ul{
         }
 
         
-        a{
+        li{
             padding: .5rem .5rem .5rem .3rem ;
             text-decoration: none;
         }
 
-        a:hover{
+        li:hover{
             text-decoration-line: underline;
         }
 
@@ -665,10 +666,11 @@ ul{
         display: inline;
         }
 
+
         .hehe{
             width: inherit;
+        
             display: block;
-            width: 100%;
             border-bottom: solid #757575 .05rem;
             i {
             transition: transform 0.5s ease; 
@@ -676,6 +678,10 @@ ul{
             
             i.rotate {
             transform: rotateX(180deg);
+            }
+
+            button{
+                padding-top: 0px;
             }
         }
 
