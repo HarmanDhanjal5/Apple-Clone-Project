@@ -3,7 +3,7 @@
 A front-end web development project recreating the main landing page of Apple.com.
 All links on the page accurately route to their corresponding destinations on the official Apple website.
 
-## View the Live Site Here :- (https://harmandhanjal5.github.io/Apple-Clone-Project/) (currently not accessable)
+## View the Live Site Here :- (https://harmandhanjal5.github.io/Apple-Clone-Project/) (can we accessed now) 
 
 ##  About The Project
 This project was built to practice structuring complex layouts, styling responsive UI elements, and managing file routing. 
